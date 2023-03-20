@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import web.service.CarService;
+import web.service.CarServiceImpl;
 
 @Controller
 @RequestMapping("/cars")
@@ -17,7 +18,7 @@ public class CarsController {
     private final CarService carService;
 
     @Autowired
-    public CarsController(CarService carService) {
+    public CarsController(CarServiceImpl carService) {
         this.carService = carService;
     }
 

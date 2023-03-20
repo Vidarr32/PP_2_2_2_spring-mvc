@@ -9,7 +9,6 @@ import java.util.Arrays;
 import java.util.List;
 
 
-@Component
 public class CarDaoImpl implements CarDao{
     private final List<Car> cars = new ArrayList<>(Arrays.asList(
             new Car("Car1", 1, 2011),
